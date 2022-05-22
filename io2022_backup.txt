@@ -13,7 +13,7 @@
 	I received my bachelor's degree from EE department, Shanghai Jiao Tong University in 2019. After that, I was admitted to the graduate school of Shanghai Jiao Tong University.
 </p>
 <p>
-	I joined Research Center of Intelligent Internet of Things (IIoT) in 2017 and have been supervised by Professor <a href="http://iiot.sjtu.edu.cn/xtian/"> Xiaohua Tian</a> and <a href="http://www.cs.sjtu.edu.cn/~wang-xb/"> Xinbing Wang</a> since then. My research work in IIoT includes backscatter communication and localization. My research interests are mainly on wireless communication and wireless sensing. 
+	I joined Research Center of Intelligent Internet of Things (IIoT) in 2017 and have been supervised by Professor <a href="http://iiot.sjtu.edu.cn/xtian/"> Xiaohua Tian</a> and <a href="http://www.cs.sjtu.edu.cn/~wang-xb/"> Xinbing Wang</a> since then. My research work in IIoT includes backscatter communication and localization. My research interests are mainly on wireless communication and wireless sensing. Before joing IIoT, I also worked with with Professor <a href="http://bme.sjtu.edu.cn/En/FacultyDetail/30"> Xiaohong Sui</a> and <a href="http://sourcedb.sinano.cas.cn/yw/peo/facultyorstaff/201204/t20120426_3564019.html"> Xiaohua Zhang</a> in the area of biomedical engineering.
 </p>
 <h2>My Academic Experience</h2>
 	<h3>From 2015 to 2017</h3>
