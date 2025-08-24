@@ -35,7 +35,7 @@
         }
 
         a {
-            color: #86B4E9;
+            color: #003366;
             text-decoration: none;
         }
 
@@ -54,10 +54,15 @@
             text-align: center;
             margin-bottom: 1rem;
         }
-
+        
         .photo img {
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+            border-radius: 0;          /* keep original rectangular form */
+            box-shadow: none;          /* remove any stylized rim/glow */
+            width: 220px;              /* adjust as you like */
+            height: auto;              /* preserve aspect ratio */
+            object-fit: contain;       /* no cropping */
         }
 
         /* Footer */
@@ -89,24 +94,44 @@
 
     <div class="container">
         <h1>Fengyuan Zhu</h1>
-        
-        <div class="photo">
-            <img src=".\swattzz_files\myPhoto2.jpg" alt="Fengyuan Zhu Photo" height="200">
+
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <div class="photo" style="margin: 0;">
+            <img src=".\swattzz_files\myPhoto3.jpg" alt="Fengyuan Zhu Photo" height="150" style="width: 120px; height: auto;">
+            </div>
+            <div style="margin-left: 2rem; text-align: left;">
+            <strong>
+                中文名：朱丰源<br>
+                E-mail: jsqdzhufengyuan@sjtu.edu.cn<br>
+                WeChat: zfyskywalker<br>
+                Office: SEIEE 1-203, Shanghai Jiao Tong University
+            </strong>
+            </div>
         </div>
 
-        <p>I am a fourth-year Ph.D. student in the EE department, Shanghai Jiao Tong University (SJTU), Shanghai, China.</p>
-        <p>Here is my e-mail address in SJTU: <a href="mailto:jsqdzhufengyuan@sjtu.edu.cn">jsqdzhufengyuan@sjtu.edu.cn</a></p>
+        <div style="background-color:#afbdc9; padding:0.5rem; border-radius:8px; margin-bottom:1rem; min-height: 70px; display: flex; align-items: center;">
+            <div style="width:100%;">
+                <h2 style="color:#CC3333; text-align:center; margin:0 0 0.3rem 0;">NEWS</h2>
+                <p style="color:#0c0c0c; text-align:center; margin:0;">
+                    I am expected to receive my Ph.D. degree in September 2025 and will join Shanghai Jiao Tong University as a postdoctoral researcher in the School of Computer Science. My supervisor will be Prof. Xiaohua Tian</a>.
+                </p>
+            </div>
+        </div>
+
+        <p>I am a fourth-year Ph.D. student in the EE department at Shanghai Jiao Tong University (SJTU), Shanghai, China. I am expected to graduate and receive my Ph.D. degree in September 2025.</p>
         <p>I received my bachelor's degree from the EE department, Shanghai Jiao Tong University in 2019. After that, I was admitted to the graduate school of Shanghai Jiao Tong University.</p>
-        <p>I was admitted to the Master Program in 2019 and transferred to the Ph.D. program in 2021 in the EE department, Shanghai Jiao Tong University. My supervisor has been Professor <a href="http://iiot.sjtu.edu.cn/xtian/">Xiaohua Tian</a>. </p>
-        <p>My research interests include wireless systems and various low-power IoT designs. My research works focus on developing next-generation IoT networks, with each IoT node consuming μW-level ultra-low power. My research works are published in top journals in networking: IEEE/ACM Transactions on Networking <strong>(TON)</strong>, IEEE Transactions on Mobile Computing <strong>(TMC)</strong>, and top conferences in mobile computing: <strong>ACM MobiCom</strong>, <strong>ACM MobiSys</strong>, <strong>ACM SenSys</strong>, and top conferences in microelectronics: International Solid-State Circuits Conference <strong>(ISSCC)</strong>. </p>
+        <p>I am pursuing my Ph.D. degree in the EE department at Shanghai Jiao Tong University under the supervision of Professor <a href="https://xtian.sjtu.edu.cn/">Xiaohua Tian</a>.</p>
+        <p>My research interests include backscatter communication and various low-power IoT designs. My research works focus on developing next-generation IoT networks, with each IoT node consuming μW-level ultra-low power, without battery or life-span powered. My research works are published in top journals in networking: IEEE/ACM Transactions on Networking <strong>(TON)</strong>, IEEE Transactions on Mobile Computing <strong>(TMC)</strong>, and top conferences in mobile computing: <strong>ACM MobiCom</strong>, <strong>ACM MobiSys</strong>, <strong>ACM SenSys</strong>, and top conferences in microelectronics: International Solid-State Circuits Conference <strong>(ISSCC)</strong>. </p>
 
         <h2>My Academic Experience</h2>
 
+        <!--
         <h3>From 2015 to 2017</h3>
         <p>I worked with Jingran Zhu and Yiling Wang under the supervision of Prof. Sui in the Department of Biomedical Engineering. The research topic is CNT electrodes.</p>
 
         <h3>From 2017 to 2022</h3>
-        <p>In 2017, I joined IIoT and began to work with Renjie Zhao under the supervision of Prof. Tian. The research topic is OFDMA backscatter.</p>
+        -->
+        <p>In 2017, I joined IIoT and began to work with <a href="https://renjiezhao.github.io/">Renjie Zhao</a> under the supervision of Prof. Tian. The research topic is OFDMA backscatter.</p>
         <p>In 2019, I began my M.S. program in the EE department at Shanghai Jiao Tong University. My supervisor is Prof. Tian.</p>
         <p>In 2021, I began my Ph.D. program in the EE department at Shanghai Jiao Tong University. My Ph.D. supervisor is Prof. Tian.</p>
 
@@ -114,6 +139,22 @@
         <p><strong>CWSN'24 Best Paper Award</strong> (2024): The 18th China Conference on Internet of Things (Wireless Sensor Network)</p>
         <p><strong>The 17th Challenge Cup Shanghai Division</strong> (2021): <strong>Outstanding Award，特等奖 (Team leader)</strong></p>
         <p><strong>National Scholarship for Doctoral Students</strong> (2023): <strong>博士生国家奖学金</strong></p>
+        
+        <h2>Academic Services</h2>
+        <p>
+            I am a reviewer for the following journals:
+            <ul>
+                <li>IEEE Transactions on Networking (TON)</li>
+                <li>IEEE Transactions on Mobile Computing (TMC)</li>
+                <li>IEEE Transactions on Wireless Communications (TWC)</li>
+                <li>IEEE Transactions on Communications (TCOM)</li>
+                <li>IEEE Transactions on Vehicular Technology (TVT)</li>
+                <li>IEEE Wireless Communications Letters</li>
+            </ul>
+        </p>
+        <p>
+            I served as Session Chair for ICCC'25 in the session: IoT Communications.
+        </p>
 
         <h2>Highlighted Papers</h2>
         <p>
@@ -202,7 +243,7 @@
     </div>
 
     <footer>
-        <p>© 2024 Fengyuan Zhu | Contact: <a href="mailto:jsqdzhufengyuan@sjtu.edu.cn">jsqdzhufengyuan@sjtu.edu.cn</a></p>
+        <p>&copy; 2025 Fengyuan Zhu | Contact: <a href="mailto:jsqdzhufengyuan@sjtu.edu.cn" style="color: #fff;">jsqdzhufengyuan@sjtu.edu.cn</a></p>
     </footer>
 
 </body>
