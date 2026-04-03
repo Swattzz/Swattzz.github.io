@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fengyuan Zhu - Academic Homepage</title>
+    <title>Fengyuan Zhu (朱丰源)</title>
+
     <style>
-        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        h1, h2, h3 {
-            text-align: center;
-            color: #21394E;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
         h1 {
-            margin-top: 1.5rem;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            margin-bottom: 0.2rem;
         }
 
         h2 {
             margin-top: 2rem;
+            font-size: 1.4rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3rem;
         }
 
         p {
-            text-align: justify;
-            margin: 0.5rem 0;
+            margin: 0.6rem 0;
         }
 
         a {
-            color: #003366;
+            color: #0056b3;
             text-decoration: none;
         }
 
@@ -43,208 +46,307 @@
             text-decoration: underline;
         }
 
-        /* Centering and Layout */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
-        .photo {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        
         .photo img {
-            display: block;
-            margin: 0 auto;
-            border-radius: 0;          /* keep original rectangular form */
-            box-shadow: none;          /* remove any stylized rim/glow */
-            width: 220px;              /* adjust as you like */
-            height: auto;              /* preserve aspect ratio */
-            object-fit: contain;       /* no cropping */
+            width: 140px;
         }
 
-        /* Footer */
+        .name-block {
+            flex: 1;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .news {
+            background: #f5f5f5;
+            padding: 10px 15px;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .pub-item {
+            margin-bottom: 0.6rem;
+        }
+
         footer {
             text-align: center;
-            padding: 1rem 0;
-            background-color: #21394E;
-            color: white;
-            margin-top: 2rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2, h3 {
-                font-size: 1.5rem;
-            }
-
-            .container {
-                padding: 15px;
-            }
+            font-size: 0.9rem;
+            margin-top: 40px;
+            color: #666;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        <h1>Fengyuan Zhu</h1>
 
-        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-            <div class="photo" style="margin: 0;">
-            <img src=".\swattzz_files\myPhoto3.jpg" alt="Fengyuan Zhu Photo" height="150" style="width: 120px; height: auto;">
+        <!-- Header -->
+        <div class="header">
+            <div class="photo">
+                <img src="./swattzz_files/myPhoto3.jpg">
             </div>
-            <div style="margin-left: 2rem; text-align: left;">
-            <strong>
-                中文名：朱丰源<br>
-                E-mail: jsqdzhufengyuan@sjtu.edu.cn<br>
-                WeChat: zfyskywalker<br>
-                Office: SEIEE 1-203, Shanghai Jiao Tong University
-            </strong>
-            </div>
-        </div>
 
-        <div style="background-color:#afbdc9; padding:0.5rem; border-radius:8px; margin-bottom:1rem; min-height: 70px; display: flex; align-items: center;">
-            <div style="width:100%;">
-                <h2 style="color:#CC3333; text-align:center; margin:0 0 0.3rem 0;">NEWS</h2>
-                <p style="color:#0c0c0c; text-align:center; margin:0;">
-                    I am expected to receive my Ph.D. degree in September 2025 and will join Shanghai Jiao Tong University as a postdoctoral researcher in the School of Computer Science. My supervisor will be Prof. Xiaohua Tian</a>.
-                </p>
+            <div class="name-block">
+                <h1>Fengyuan Zhu（朱丰源）</h1>
+                <p>Postdoctoral Researcher<br>
+                    School of Computer Science (School of Cyberspace Security, School of Cryptography)<br>
+                    Shanghai Jiao Tong University</p>
+
+                <div class="contact">
+                    Email: jsqdzhufengyuan@sjtu.edu.cn<br>
+                    WeChat: zfyskywalker
+                </div>
             </div>
         </div>
 
-        <p>I am a fourth-year Ph.D. student in the EE department at Shanghai Jiao Tong University (SJTU), Shanghai, China. I am expected to graduate and receive my Ph.D. degree in September 2025.</p>
-        <p>I received my bachelor's degree from the EE department, Shanghai Jiao Tong University in 2019. After that, I was admitted to the graduate school of Shanghai Jiao Tong University.</p>
-        <p>I am pursuing my Ph.D. degree in the EE department at Shanghai Jiao Tong University under the supervision of Professor <a href="https://xtian.sjtu.edu.cn/">Xiaohua Tian</a>.</p>
-        <p>My research interests include backscatter communication and various low-power IoT designs. My research works focus on developing next-generation IoT networks, with each IoT node consuming μW-level ultra-low power, without battery or life-span powered. My research works are published in top journals in networking: IEEE/ACM Transactions on Networking <strong>(TON)</strong>, IEEE Transactions on Mobile Computing <strong>(TMC)</strong>, and top conferences in mobile computing: <strong>ACM MobiCom</strong>, <strong>ACM MobiSys</strong>, <strong>ACM SenSys</strong>, and top conferences in microelectronics: International Solid-State Circuits Conference <strong>(ISSCC)</strong>. </p>
+        <!-- News -->
+        <div class="news">
+            <b>News:</b><br>
+            - <span style="color:#b30000; font-weight:bold;">[2025.07]</span> Joined the Department of Computer Science
+            and Engineering at Shanghai Jiao Tong University as a postdoctoral researcher<br>
+            - <span style="color:#b30000; font-weight:bold;">[2025.09]</span> Ph.D. degree awarded, Shanghai Jiao Tong
+            University<br>
+            - <span style="color:#b30000; font-weight:bold;">[2025.09]</span> Awarded Shanghai Jiao Tong University
+            Outstanding Graduate<br>
+            - <span style="color:#b30000; font-weight:bold;">[2025.12]</span> Ph.D. dissertation “RESEARCH ON KEY
+            TECHNOLOGIES OF NEAR-ZERO-POWER INTERNET OF THINGS” selected into the 2025 CIC Doctoral Dissertation
+            Incentive Program by the China Institute of Communications (CIC) (top ten nationwide)<br>
+            - <span style="color:#b30000; font-weight:bold;">[2026.03]</span> MobiCom 2025 "NanoScatter" selected as
+            Research Highlight in ACM SIGMOBILE GetMobile (coming soon)
+        </div>
 
-        <h2>My Academic Experience</h2>
+        <!-- About -->
+        <h2>About</h2>
+        <p>
+            I am a researcher working on near-zero-power IoT systems, focusing on ultra-low-power wireless communication
+            under μW-level energy constraints. My work spans system architecture, communication protocols, and
+            chip-level implementation for near-zero-power IoT.
+        </p>
+        <p>
+            I received my Ph.D. from Shanghai Jiao Tong University under the supervision of Prof. Xiaohua Tian.
+        </p>
 
-        <!--
-        <h3>From 2015 to 2017</h3>
-        <p>I worked with Jingran Zhu and Yiling Wang under the supervision of Prof. Sui in the Department of Biomedical Engineering. The research topic is CNT electrodes.</p>
+        <!-- Research -->
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Near-zero-power wireless communication</li>
+            <li>Ultra-low-power IoT systems (&lt;10μW)</li>
+            <li>Backscatter communication</li>
+            <li>Cross-layer system design</li>
+        </ul>
 
-        <h3>From 2017 to 2022</h3>
-        -->
-        <p>In 2017, I joined IIoT and began to work with <a href="https://renjiezhao.github.io/">Renjie Zhao</a> under the supervision of Prof. Tian. The research topic is OFDMA backscatter.</p>
-        <p>In 2019, I began my M.S. program in the EE department at Shanghai Jiao Tong University. My supervisor is Prof. Tian.</p>
-        <p>In 2021, I began my Ph.D. program in the EE department at Shanghai Jiao Tong University. My Ph.D. supervisor is Prof. Tian.</p>
+        <!-- Publications -->
+        <h2>Selected Publications</h2>
 
-        <h2>Awards in Ph.D. Stage</h2>
-        <p><strong>CWSN'24 Best Paper Award</strong> (2024): The 18th China Conference on Internet of Things (Wireless Sensor Network)</p>
-        <p><strong>The 17th Challenge Cup Shanghai Division</strong> (2021): <strong>Outstanding Award，特等奖 (Team leader)</strong></p>
-        <p><strong>National Scholarship for Doctoral Students</strong> (2023): <strong>博士生国家奖学金</strong></p>
-        
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiCom'25]</span>
+            <strong>Fengyuan Zhu</strong>, J. Shen, W. Li, J. Luo, R. Zhao, L. Zhong, B. Wang, X. Tian,
+            "NanoScatter: Towards Ambient IoT", in <em><strong>Proc. ACM MobiCom 2025</strong></em>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[IEEE/ACM TON'25]</span>
+            <strong>Fengyuan Zhu</strong>, J. He, J. Lin, Y. Qin, B. Wang, Q. Di, M. Jin, and X. Tian,
+            "Inductor-free LoRa Backscatter", <em><strong>IEEE/ACM Transactions on Networking, 2025</strong></em>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ISSCC'24]</span>
+            J. Shen*, <strong>Fengyuan Zhu*</strong> (co-primary), Y. Liu, B. Liu, L. Xu, C. Shi, L. Huang, Xiaohua
+            Tian, R. Zhang,
+            “A 44μW IoT Tag Enabling 1μs Synchronization Accuracy and OFDMA Concurrent Communication with
+            Software-Defined Modulation,”
+            <em><strong>ISSCC 2024</strong></em>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[IEEE/ACM TON'23]</span>
+            <strong>Fengyuan Zhu</strong>, R. Zhao, B. Wang, X. Tian, X. Wang, X. Guan, C. Zhou,
+            "Enabling OFDMA in Wi-Fi Backscatter," <em><strong>IEEE/ACM Transactions on Networking, 2023</strong></em>
+        </p>
+
+        <h2>Publications</h2>
+
+        <h3>Journal</h3>
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[IEEE/ACM TON'25]</span>
+            <strong>Fengyuan Zhu</strong>, J. He, J. Lin, Y. Qin, B. Wang, Q. Di, M. Jin, and X. Tian, "Inductor-free
+            LoRa Backscatter", <em><strong>IEEE Transactions on Networking, 2025</strong></em> <a
+                href="https://ieeexplore.ieee.org/document/10902458">[Link]</a>
+        </p>
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[IEEE/ACM TON'23]</span>
+            <strong>Fengyuan Zhu</strong>, R. Zhao, B. Wang, X. Tian, X. Wang, X. Guan, C. Zhou, "Enabling OFDMA in
+            Wi-Fi Backscatter," <em><strong>IEEE/ACM Transactions on Networking, 2023</strong></em> <a
+                href="https://ieeexplore.ieee.org/document/10176347">[Link]</a>
+        </p>
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[IEEE/ACM TON'23]</span>
+            X. Tian, <strong>Fengyuan Zhu</strong>, H. Li, M. Ouyang, L. Feng, X. Tong, X. Wang, "MobiScatter: Enhancing
+            Capacity in Drone Assisted High-Concurrency Backscatter Networks," <em><strong>IEEE/ACM Transactions on
+                    Networking, 2023</strong></em> <a href="https://ieeexplore.ieee.org/document/10183869">[Link]</a>
+        </p>
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[IEEE TMC'24]</span>
+            B. Wang, <strong>Fengyuan Zhu</strong>, L. Zhong, M. Jin, X. Wang, C. Chen, X. Guan, C. Zhou,
+            <strong>Xiaohua Tian</strong>, "Enabling Dual-Band Wi-Fi Backscatter," <em><strong>IEEE Transactions on
+                    Mobile Computing, 2024</strong></em> <a href="https://doi.org/10.1109/TMC.2024.3400013">[Link]</a>
+        </p>
+
+        <h3>Conference</h3>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiCom'25]</span>
+            (NEW!) <strong>Fengyuan Zhu</strong>, J. Shen, W. Li, J. Luo, R. Zhao, L. Zhong, B. Wang, X. Tian,
+            "NanoScatter: Towards Ambient IoT", in <em><strong>Proc. MobiCom 2025</strong></em> <a
+                href=".\swattzz_files\MobiCom25-NanoScatter Towards Ambient IoT.pdf">[PDF]</a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiCom'24]</span>
+            M. Xie, M. Jin, <strong>Fengyuan Zhu</strong>, Y. Zhang, X. Tian, X. Wang, and C. Zhou.
+            "Enabling High-rate Backscatter Sensing at Scale."
+            <em><strong>In Proc. ACM MobiCom 2024</strong></em>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiSys'24]</span>
+            B. Wang, <strong>Fengyuan Zhu</strong>, Wenhui Li, Z. Yang, M. Jin, and Xiaohua Tian.
+            "Frequency-agile OFDM Backscatter."
+            <em><strong>In Proc. ACM MobiSys 2024</strong></em>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ISSCC'24]</span>
+            J. Shen*, <strong>Fengyuan Zhu*</strong> (co-primary), Y. Liu, B. Liu, L. Xu, C. Shi, L. Huang, Xiaohua
+            Tian, R. Zhang, “A 44μW IoT Tag Enabling 1μs Synchronization Accuracy and OFDMA Concurrent Communication
+            with Software-Defined Modulation,” <em><strong>ISSCC 2024</strong></em> <a
+                href=".\swattzz_files\ISSCC24-44μW IoT Tag OFDMA and SD Modulation.pdf"> [PDF] </a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM SenSys'23]</span>
+            R. Ding, H. Jin, J. Ding, X. Wang, G. Fan, <strong>Fengyuan Zhu</strong>, X. Tian, L. Kong, "Push the Limit
+            of Single-Chip mmWave Radar-Based Egomotion Estimation with Moving Objects in FoV", in <em><strong>Proc. ACM
+                    SenSys 2023</strong></em> <a
+                href=".\swattzz_files\SenSys23-Push the Limit of Single-Chip mmWave Radar-Based Egomotion Estimation with Moving Objects in FoV.pdf">[PDF]</a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiSys'23]</span>
+            L. Zhong, M. Ouyang, <strong>Fengyuan Zhu</strong>, M. Jin, X. Wang, X. Guan, C. Zhou, X. Tian, "SmartShell:
+            A Near-Field Reflective Surface Enhancing RSS", in <em><strong>Proc. ACM MobiSys 2023</strong></em> <a
+                href=".\swattzz_files\Mobisys23 SmartShell A Near_field Reflective Surface Enhancing RSS.pdf">[PDF]</a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM SenSys'22]</span>
+            <strong>Fengyuan Zhu</strong>, L. Feng, X. Tian, M. Jin, X. Wang, "Towards Ultra-low Power OFDMA Downlink
+            Demodulation," in <em><strong>Proc. ACM SenSys 2022</strong></em> <a
+                href=".\swattzz_files\SenSys22_Towards-Ultral-low-Power-OFDMA-Downlink-Domodulation.pdf">[PDF]</a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiSys'22]</span>
+            <strong>Fengyuan Zhu</strong>, M. Ouyang, L. Feng, Y. Liu, X. Tian, M. Jin, D. Chen, X. Wang, "Enabling
+            Software-defined PHY in Backscatter Networks," in <em><strong>Proc. ACM MobiSys 2022</strong></em> <a
+                href=".\swattzz_files\Enabling software-defined PHY for backscatter networks.pdf">[PDF]</a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiSys'20]</span>
+            <strong>Fengyuan Zhu</strong>, Y. Feng, Q. Li, X. Tian, X. Wang, "DigiScatter: Efficiently Prototyping
+            Large-Scale OFDMA Backscatter Networks," in <em><strong>Proc. ACM MobiSys 2020</strong></em> <a
+                href=".\swattzz_files\DigiScatter Efficiently Prototyping Large Scale OFDMA Backscatter Networks.pdf">[PDF]</a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM MobiCom'19]</span>
+            R. Zhao, <strong>Fengyuan Zhu</strong>, Y. Feng, S. Peng, X. Tian, H. Yu, X. Wang, “OFDMA-Enabled Wi-Fi
+            Backscatter,”in <em><strong>Proc. ACM MobiCom 2019</strong></em> <a
+                href=".\swattzz_files\OFDMA-Enabled-WiFi-Backscatter.pdf">[PDF]</a>
+        </p>
+
+        <p>
+            <span style="color:#b30000; font-weight:bold;">[ACM UbiComp'19]</span>
+            X. Tong, <strong>Fengyuan Zhu</strong>, Y. Wan, X. Tian and X. Wang, “Batch Localization based on OFDMA
+            Backscatter,” in <em><strong>Proc. ACM UbiComp 2019</strong></em> <a
+                href=".\swattzz_files\2019-ubicomp-Batch-Localization.pdf"> [PDF] </a>
+        </p>
+
+        <!-- Projects -->
+        <h2>Selected Systems (under construction)</h2>
+        <ul>
+            <li>NanoScatter IC and system for 3GPP Ambient IoT (44μW power with 1μs-synchronization-accuracy OFDMA)</li>
+            <li>Near-zero-power OFDMA uplink and downlink networks</li>
+            <li>Software-defined PHY for heterogeneous backscatter networks</li>
+        </ul>
+
+        <!-- Service -->
         <h2>Academic Services</h2>
         <p>
-            I am a reviewer for the following journals:
-            <ul>
-                <li>IEEE Transactions on Networking (TON)</li>
-                <li>IEEE Transactions on Mobile Computing (TMC)</li>
-                <li>IEEE Transactions on Wireless Communications (TWC)</li>
-                <li>IEEE Transactions on Communications (TCOM)</li>
-                <li>IEEE Transactions on Vehicular Technology (TVT)</li>
-                <li>IEEE Wireless Communications Letters</li>
-            </ul>
-        </p>
-        <p>
-            I served as Session Chair for ICCC'25 in the session: IoT Communications.
+            <span style="color:#b30000;font-weight:bold;">[2019-now]</span>
+            Reviewer for IEEE/ACM TON, TMC, TWC, TCOM, TVT
         </p>
 
-        <h2>Highlighted Papers</h2>
         <p>
-            (NEW!) <strong>Fengyuan Zhu</strong>, J. Shen, W. Li, J. Luo, R. Zhao, L. Zhong, B. Wang, X. Tian, "NanoScatter: Towards Ambient IoT", in <em><strong>Proc. MobiCom 2025</strong></em> <a href=".\swattzz_files\MobiCom25-NanoScatter Towards Ambient IoT.pdf">[PDF]</a></p>
-        </p>
-        <p>
-            (NEW!) <strong>Fengyuan Zhu</strong>, J. He, J. Lin, Y. Qin, B. Wang, Q. Di, M. Jin, and X. Tian, "Inductor-free LoRa Backscatter", <em><strong>IEEE Transactions on Networking, 2025</strong></em> <a href="https://ieeexplore.ieee.org/document/10902458">[Link]</a>
-        </p>
-        <p>
-            J. Shen*, <strong>Fengyuan Zhu*</strong> (co-primary), Y. Liu, B. Liu, L. Xu, C. Shi, L. Huang, X. Tian, R. Zhang, “A 44μW IoT Tag Enabling 1μs Synchronization Accuracy and OFDMA Concurrent Communication with Software-Defined Modulation,” <em><strong>ISSCC 2024</strong></em><a href=".\swattzz_files\ISSCC24-44μW IoT Tag OFDMA and SD Modulation.pdf"> [PDF] </a>
-        </p>
-        <p><strong>Fengyuan Zhu</strong>, R. Zhao, B. Wang, X. Tian, X. Wang, X. Guan, C. Zhou, "Enabling OFDMA in Wi-Fi Backscatter," <em><strong>IEEE/ACM Transactions on Networking, 2023</strong></em> <a href=".\swattzz_files\IEEE TON_Enabling_OFDMA_in_Wi-Fi_Backscatter.pdf">[PDF]</a></p>
-        <p>
-            X. Tian, <strong>Fengyuan Zhu</strong>, H. Li, M. Ouyang, L. Feng, X. Tong, X. Wang, "MobiScatter: Enhancing Capacity in Drone Assisted High-Concurrency Backscatter Networks," <em><strong>IEEE/ACM  Transactions on Networking, 2023</strong></em> <a href="https://ieeexplore.ieee.org/document/10183869">[Link]</a>
-        </p>
-        <p>
-            <strong>Fengyuan Zhu</strong>, L. Feng, X. Tian, M. Jin, X. Wang, "Towards Ultra-low Power OFDMA Downlink Demodulation," in <em><strong>Proc. ACM SenSys 2022</strong></em>  <a href=".\swattzz_files\SenSys22_Towards-Ultral-low-Power-OFDMA-Downlink-Domodulation.pdf">[PDF]</a>
-        </p>
-        <p>
-            <strong>Fengyuan Zhu</strong>, M. Ouyang, L. Feng, Y. Liu, X. Tian, M. Jin, D. Chen, X. Wang, "Enabling Software-defined PHY in Backscatter Networks," in <em><strong>Proc. ACM MobiSys 2022</strong></em>  <a href=".\swattzz_files\Enabling software-defined PHY for backscatter networks.pdf">[PDF]</a>
-        </p>
-        <p>
-            <strong>Fengyuan Zhu</strong>, Y. Feng, Q. Li, X. Tian, X. Wang, "DigiScatter: Efficiently Prototyping Large-Scale OFDMA Backscatter Networks," in <em><strong>Proc. ACM MobiSys 2020</strong></em> <a href=".\swattzz_files\DigiScatter Efficiently Prototyping Large Scale OFDMA Backscatter Networks.pdf">[PDF]</a>
+            <span style="color:#b30000;font-weight:bold;">[ICCC 2025]</span>
+            Session Chair, IoT Communication Track
         </p>
 
-        <h2>Journal Publications</h2>
-        <p>
-            <strong>Fengyuan Zhu</strong>, J. He, J. Lin, Y. Qin, B. Wang, Q. Di, M. Jin, and X. Tian, "Inductor-free LoRa Backscatter", <em><strong>IEEE Transactions on Networking, 2025</strong></em> <a href="https://ieeexplore.ieee.org/document/10902458">[Link]</a>
+        <!-- Awards -->
+        <h2>Awards</h2>
+        <ul>
+            <li>CWSN Best Paper Award (2024)</li>
+            <li>National Scholarship (2023)</li>
+        </ul>
+        <p><span style="color:#b30000;font-weight:bold;">[2026.03]</span> MobiCom 2025 "NanoScatter" selected as
+                Research Highlight in ACM SIGMOBILE GetMobile (coming soon)
         </p>
         <p>
-            <strong>Fengyuan Zhu</strong>, R. Zhao, B. Wang, X. Tian, X. Wang, X. Guan, C. Zhou, "Enabling OFDMA in Wi-Fi Backscatter," <em><strong>IEEE/ACM  Transactions on Networking, 2023</strong></em> <a href="https://ieeexplore.ieee.org/document/10176347">[Link]</a>
+            <span style="color:#b30000;font-weight:bold;">[CIC 2025]</span>
+            Doctoral Dissertation “RESEARCH ON KEY TECHNOLOGIES OF NEAR-ZERO-POWER INTERNET OF THINGS” selected for the
+            China Institute of Communications (CIC) Doctoral Dissertation Incentive Program (Top 10 nationwide)
         </p>
+
         <p>
-            X. Tian, <strong>Fengyuan Zhu</strong>, H. Li, M. Ouyang, L. Feng, X. Tong, X. Wang, "MobiScatter: Enhancing Capacity in Drone Assisted High-Concurrency Backscatter Networks," <em><strong>IEEE/ACM  Transactions on Networking, 2023</strong></em> <a href="https://ieeexplore.ieee.org/document/10183869">[Link]</a>
+            <span style="color:#b30000;font-weight:bold;">[Top Tech Advances]</span>
+            Recognized as one of the “Top 10 IoT Technological Advances” by China Institute of Electronics / China
+            Institute of Communications (2nd contributor)
         </p>
+
         <p>
-            B. Wang, <strong>Fengyuan Zhu</strong>, L. Zhong, M. Jin, X. Wang, C. Chen, X. Guan, C. Zhou, <strong>Xiaohua Tian</strong>, "Enabling Dual-Band Wi-Fi Backscatter," <em><strong>IEEE Transactions on Mobile Computing, 2024</strong></em> <a href="https://doi.org/10.1109/TMC.2024.3400013">[Link]</a>
+            <span style="color:#b30000;font-weight:bold;">[CICC Award]</span>
+            First Prize of Technical Invention Award, Chinese Institute of Command and Control (CICC) (2nd contributor)
         </p>
-        <h2>Conference Publications</h2>
-        <!-- Conference publications list -->
+
         <p>
-            (NEW!) <strong>Fengyuan Zhu</strong>, J. Shen, W. Li, J. Luo, R. Zhao, L. Zhong, B. Wang, X. Tian, "NanoScatter: Towards Ambient IoT", in <em><strong>Proc. MobiCom 2025</strong></em> <a href=".\swattzz_files\MobiCom25-NanoScatter Towards Ambient IoT.pdf">[PDF]</a>
+            <span style="color:#b30000;font-weight:bold;">[Challenge Cup]</span>
+            Grand Prize, 17th “Challenge Cup” Shanghai Undergraduate Extracurricular Academic Competition (1st
+            contributor)
         </p>
-        <p>
-            M. Xie, M. Jin, <strong>Fengyuan Zhu</strong>, Y. Zhang, X. Tian, X. Wang, and C. Zhou. 
-            "Enabling High-rate Backscatter Sensing at Scale." 
-            <em><strong>In Proc. ACM MobiCom 2024</strong></em>, 
-            Association for Computing Machinery, New York, NY, USA, 124–138, 2024. 
-            <a href="https://doi.org/10.1145/3636534.3649351">https://doi.org/10.1145/3636534.3649351</a>
-        </p>        
-        
-        <p>
-            B. Wang, <strong>Fengyuan Zhu</strong>, Wenhui Li, Z. Yang, M. Jin, and Xiaohua Tian. 
-            "Frequency-agile OFDM Backscatter." 
-            <em><strong>In Proc. ACM MobiSys 2024</strong></em>, 
-            Association for Computing Machinery, New York, NY, USA, 252–264, 2024. 
-            <a href="https://doi.org/10.1145/3643832.3661873">https://doi.org/10.1145/3643832.3661873</a>
-        </p>
-        
-        <p>
-            J. Shen*, <strong>Fengyuan Zhu*</strong> (co-primary), Y. Liu, B. Liu, L. Xu, C. Shi, L. Huang, Xiaohua Tian, R. Zhang, “A 44μW IoT Tag Enabling 1μs Synchronization Accuracy and OFDMA Concurrent Communication with Software-Defined Modulation,” <em><strong>ISSCC 2024</strong></em> <a href=".\swattzz_files\ISSCC24-44μW IoT Tag OFDMA and SD Modulation.pdf"> [PDF] </a>
-        </p>
-        <p>
-            R. Ding, H. Jin, J. Ding, X. Wang, G. Fan, <strong>Fengyuan Zhu</strong>, X. Tian, L. Kong, "Push the Limit of Single-Chip mmWave Radar-Based Egomotion Estimation with Moving Objects in FoV", in <em><strong>Proc. ACM SenSys 2023</strong></em> <a href=".\swattzz_files\SenSys23-Push the Limit of Single-Chip mmWave Radar-Based Egomotion Estimation with Moving Objects in FoV.pdf">[PDF]</a>
-        </p>
-        <p>
-            L. Zhong, M. Ouyang, <strong>Fengyuan Zhu</strong>, M. Jin, X. Wang, X. Guan, C. Zhou, X. Tian, "SmartShell: A Near-Field Reflective Surface Enhancing RSS", in <em><strong>Proc. ACM MobiSys 2023</strong></em>  <a href=".\swattzz_files\Mobisys23 SmartShell A Near_field Reflective Surface Enhancing RSS.pdf">[PDF]</a>
-        </p>
-        <p>
-            <strong>Fengyuan Zhu</strong>, L. Feng, X. Tian, M. Jin, X. Wang, "Towards Ultra-low Power OFDMA Downlink Demodulation," in <em><strong>Proc. ACM SenSys 2022</strong></em>  <a href=".\swattzz_files\SenSys22_Towards-Ultral-low-Power-OFDMA-Downlink-Domodulation.pdf">[PDF]</a>
-        </p>
-        <p>
-            <strong>Fengyuan Zhu</strong>, M. Ouyang, L. Feng, Y. Liu, X. Tian, M. Jin, D. Chen, X. Wang, "Enabling Software-defined PHY in Backscatter Networks," in <em><strong>Proc. ACM MobiSys 2022</strong></em>  <a href=".\swattzz_files\Enabling software-defined PHY for backscatter networks.pdf">[PDF]</a>
-        </p>
-        <p>
-            <strong>Fengyuan Zhu</strong>, Y. Feng, Q. Li, X. Tian, X. Wang, "DigiScatter: Efficiently Prototyping Large-Scale OFDMA Backscatter Networks," in <em><strong>Proc. ACM MobiSys 2020</strong></em> <a href=".\swattzz_files\DigiScatter Efficiently Prototyping Large Scale OFDMA Backscatter Networks.pdf">[PDF]</a>
-        </p>
-        <p>
-             R. Zhao, <strong>Fengyuan Zhu</strong>, Y. Feng, S. Peng, X. Tian, H. Yu, X. Wang, “OFDMA-Enabled Wi-Fi Backscatter,”in <em><strong>Proc. ACM MobiCom 2019</strong></em> <a href=".\swattzz_files\OFDMA-Enabled-WiFi-Backscatter.pdf">[PDF]</a>
-        </p>
-        <p>
-            X. Tong, <strong>Fengyuan Zhu</strong>, Y. Wan, X. Tian and X. Wang, “Batch Localization based on OFDMA Backscatter,” in <em><strong>Proc. ACM UbiComp 2019</strong></em> <a href=".\swattzz_files\2019-ubicomp-Batch-Localization.pdf"> [PDF] </a>
-        </p>
-        <!-- Add other publications here -->
-        
+
     </div>
 
     <footer>
-        <p>&copy; 2025 Fengyuan Zhu | Contact: <a href="mailto:jsqdzhufengyuan@sjtu.edu.cn" style="color: #fff;">jsqdzhufengyuan@sjtu.edu.cn</a></p>
+        © Fengyuan Zhu (Last updated: 2026.4.3)
     </footer>
 
+    </div>
+
 </body>
+
 </html>
